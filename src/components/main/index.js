@@ -34,6 +34,12 @@ class Body extends React.Component {
     }
 }
 
+const About = (props) => (
+    <div>
+        
+    </div>
+)
+
 const Footer = (props) => (
     <div className='foot'>
     <p>Connect with me!</p>

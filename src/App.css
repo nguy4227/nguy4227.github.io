@@ -45,7 +45,6 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(214, 206, 206);
-  margin-bottom: 3vh;
   background-image: url("bg.jpg");
   background-size: cover;
 }
