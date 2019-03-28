@@ -22,10 +22,10 @@ class Body extends React.Component {
 
         return (
             <div className='bod'>
-            <p>Hi, I'm <strong onMouseOver={() => this.setState({fade: true})} onMouseLeave={() => this.setState({fade: false})} className={nameFade}>Long Nguyen</strong>.</p>
-            <p>I'm a Full-stack Developer</p>
+            <p>Hi, I'm <strong onMouseOver={() => this.setState({fade: true})} onMouseLeave={() => this.setState({fade: false})} className={nameFade}>Long Nguyen</strong></p>
+            <p>And I'm a Full-stack Developer</p>
             <button 
-                onMouseOver={() => this.setState({hover: true})} onMouseLeave={() => this.setState({hover: false})} className='About btn btn-outline-primary btn-sm'
+                onMouseOver={() => this.setState({hover: true})} onMouseLeave={() => this.setState({hover: false})} className='aboutBt btn btn-outline-primary btn-sm'
             >
                 Learn more about me <i className={icon}></i>
             </button>
@@ -34,18 +34,31 @@ class Body extends React.Component {
     }
 }
 
-const About = (props) => (
-    <div>
-        
+const Projects = (props) => (
+    <div className='projects'>
+        <p></p>
     </div>
 )
 
 const Footer = (props) => (
     <div className='foot'>
-    <p>Connect with me!</p>
-    <a href="https://www.linkedin.com/in/long-nguyen-a3b6326a"><i className="fab fa-linkedin social"></i></a>
-    <a href="https://github.com/nguy4227"><i className="fab fa-github-square social"></i></a>
-    <a href=""><i className="fas fa-envelope-square social"></i></a>
+    <div class="container">
+        <div class="row">
+            <div class="aboutMe col-md">
+                <h3>About</h3>
+                    <p>
+                        I'm a full-stack developer with a passion for
+                        creating visually appealing designs with a simplistic
+                        yet functional user experience.
+                    </p>
+            </div>
+            <div class="contact col-md">
+                <p>Connect with me!</p>
+                <a href="https://www.linkedin.com/in/long-nguyen-a3b6326a"><i className="fab fa-linkedin social"></i></a>
+                <a href="https://github.com/nguy4227"><i className="fab fa-github-square social"></i></a>
+            </div>
+        </div>
+    </div>
     </div>
 )
 

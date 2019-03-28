@@ -49,14 +49,31 @@ body {
   background-size: cover;
 }
 
-.About {
+.aboutBt {
   border: solid;
   padding: 1vh;
 }
 
-.About:hover {
+.aboutBt:hover {
   color: #cdd9f5;
   transform: scale(1.025);
+}
+
+.aboutMe {
+  font-size: 15px;
+  position: relative;
+  width: 360px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact {
+  position: relative;
+  width: 360px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 a {

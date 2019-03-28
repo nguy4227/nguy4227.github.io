@@ -10,7 +10,7 @@ class App extends Component {
           <Header />
           <Body />
         </header>
-        <body className="App-header">
+        <body className="Projects">
         </body>
         <footer className="App-footer">
           <Footer />
