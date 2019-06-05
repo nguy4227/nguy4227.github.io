@@ -12,10 +12,6 @@ body {
   -o-animation: fadein 4s; /* Opera */
 }
 
-.bod {
-
-}
-
 .App-logo {
   border-radius: 50%;
   height: 40vmin;
@@ -27,6 +23,7 @@ body {
 
 .App-header {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,8 +34,20 @@ body {
   background-size: cover;
 }
 
+.App-projects {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(214, 206, 206);
+  text-align: center;
+}
+
 .App-footer {
   min-height: 20vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,17 +72,13 @@ body {
   font-size: 15px;
   position: relative;
   width: 360px;
-  margin-right: 60px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 3vh 10vw
 }
 
 .contact {
   position: relative;
   width: 360px;
-  margin-right: 60px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 3vh 10vw
 }
 
 a {
@@ -82,7 +87,7 @@ a {
 }
 
 .social {
-  margin: 2vh;
+  margin: 1vh;
   color: #cdd9f5;
 }
 
@@ -136,11 +141,49 @@ a {
   
 }
 
+.projectsTitle {
+  border-radius: 20%;
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: 6;
+  text-decoration: underline;
+  padding: 10px;
+  margin: 20px;
+}
+
+.clickableImages {
+  height: 300px;
+  width: 210px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.projbtn {
+  border: 0;
+  padding: 0;
+  outline: none!important;
+  user-select: none!important;
+}
+
 @keyframes fadein {
   from {
       opacity:0;
   }
   to {
       opacity:1;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .App {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .App {
+    width: 100%;
   }
 }
