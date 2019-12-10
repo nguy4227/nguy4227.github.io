@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Row } from 'antd'
 
 
 const Header = (props) => (
@@ -26,7 +27,7 @@ class Body extends React.Component {
         return (
             <div className='bod'>
             <p>Hi, I'm <strong onMouseOver={() => this.setState({fade: true})} onMouseLeave={() => this.setState({fade: false})} className={nameFade}>Long Nguyen</strong></p>
-            <p>And I'm a Full-stack Developer</p>
+            <p>And I'm a Front End Developer</p>
             <button
                 onClick = {this.OnLinkClick}
                 onMouseOver={() => this.setState({hover: true})} 
@@ -41,25 +42,21 @@ class Body extends React.Component {
 }
 
 const Footer = (props) => (
-    <div className='foot'>
-    <div className="container">
-        <div className="row">
-            <div className="aboutMe col-sm">
-                <h3>About</h3>
-                    <p>
-                        I'm a full-stack developer with a passion for
+        <Row className='foot' style={{width:'100%'}}>
+            <Col span={12} style={{padding:'1em'}}>
+                <h3 style={{color:'white', opacity:'0.8'}}>About</h3>
+                    <p style={{fontSize:'15px'}}>
+                        I'm a front-end developer with a passion for
                         creating visually appealing designs with a simplistic
                         yet functional user experience.
                     </p>
-            </div>
-            <div className="contact col-sm">
-                <p>Connect with me!</p>
+            </Col>
+            <Col span={12}style={{padding:'1em'}}>
+                <h3 style={{color:'white', opacity:'0.8'}}>Connect with me!</h3>
                 <a href="https://www.linkedin.com/in/long-nguyen-a3b6326a"><i className="fab fa-linkedin social"></i></a>
                 <a href="https://github.com/LongPNguyen"><i className="fab fa-github-square social"></i></a>
-            </div>
-        </div>
-    </div>
-    </div>
+            </Col>
+        </Row>
 )
 
 export {
