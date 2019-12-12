@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Header, Body, Footer} from './components/main';
 import Showcase from './components/projects';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import "antd/dist/antd.css";
 import './App.css';
 
@@ -26,8 +28,10 @@ class App extends Component {
           <Body />
         </header>
         <div id='projects' className="App-projects" style={styles.container}>
-          <h1 className="projectsTitle">Projects</h1>
-          <Showcase />          
+          <ScrollAnimation animateIn='fadeInUp'>
+          <h1 className="projectsTitle" style={styles.fadeInUp}>Freelance Projects for Clients</h1>
+          <Showcase />
+          </ScrollAnimation>         
         </div>
         <footer className="App-footer">
           <Footer />
