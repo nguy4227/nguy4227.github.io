@@ -23,7 +23,7 @@ class Showcase extends Component {
             <div>
                 <Row gutter={16} style={{width:'100%'}}>
                     <Col span={12} style={{paddingLeft:'35px'}}>
-                    <a href='https://azn-buzz-9qbuk4xl4.now.sh/'
+                    <a href='https://azn-buzz.now.sh/'
                         onMouseOver={this.mouseOver1}
                         onMouseOut={this.mouseOut1} 
                     >
